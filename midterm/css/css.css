@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*****************************************
+DEFAULTS
+*****************************************/
+
+/*use html selector to set default properties such as font family,font-size or background colour to all page*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color:black;
+    background-color:rgb(100, 173, 175);
+}
+/*use # for id selectors and margin 0 auto to center the content*/
+#container{
+    width:1024px;
+    margin:0 auto;
+    background-color: lightcyan;
+}
+/*if you give one value to padding or margin. it goes for all 4 sides(top left bottom right)*/
+section{
+    margin:15px;
+    padding:5px;
+}
+
+.header-image{
+    width: 100%;
+
+}
+/*use container and centered class selectors to set the text over the image*/
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+} 
+.centered {
+    position:absolute;
+    font-family: serif;
+    font-size: 38px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+}
+/***********************NAV
+*************************/
+
+nav{
+    margin-bottom:30px;
+    margin:0 auto;
+}
+.nav li{
+    border-right: 1px solid;
+    padding: 0 10px;
+    float:left;
+    display:block;
+}
+/* use last-child to clean the right border of last navigation list item*/
+.nav li:last-child {
+    border-right: 0;
+}
+/*set the text-decoration as none to clean the default inderlined style of nav*/
+nav a{
+    text-decoration: none;
+}
+nav li a span{ 
+    font-size: 1.8rem;
+    margin:2px 120px 10px 120px;
+    display: block;
+    color:black;
+    
+} 
+  /***********************CONTENT
+*************************/ 
+
+h2{
+    margin-top: 20px;
+    font-size: 28px;
+    padding: 5px;
+
+}
+/*use float property and left value to put the image to the left allowing the text to wrap around it*/
+.text-image{
+    float: left;
+    padding:5px;
+    width:150px;
+}
+p {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+}
+/*use list-style-type to change the style of bullet points*/
+ul{
+    list-style-type:disc;
+    margin-left: 15px;
+    font-size: 14px;
+}
+/***********************FORM
+*************************/
+form{
+    border:1px solid black;
+    padding: 10px 10px;
+    font-size: 14px;
+}
+/*  type=text is to design only text form*/
+input[type=text]{
+    width :100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+/* id selctor to change only last text box increasing padding value*/
+#message{
+    padding: 30px;
+}
+h4{
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding: 5px;
+}
+button{
+    display: -webkit-box;
+    margin-top: 8px;
+}
+/*use give a right value to text-aling property to place the footer to the right*/
+footer{
+    text-align: right;
+    margin-right: 15px;
+}

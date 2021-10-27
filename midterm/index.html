@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lone Starfish</title>
+     <!-- link is to link css into html and it should be written between head tags-->
+    <link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+     <!-- I used a container div to set a background and width in CSS to entire content -->
+    <div id="container">
+
+         <!--nav tags are written between header tags -->
+    
+        <header>
+             <!-- a container div is for both image and text,I used it to place the text over the image-->
+            <div class="container">
+            <img class="header-image" src="images/lone-starfish-wide.jpg" alt="image of a lone starfish"/>
+            <div class="centered"><h1>Lone Starfish</h1></div>
+            </div>
+             <!-- indent the child elements to make html look neat-->
+            <nav>
+                <ul class="nav">
+                    <li>
+
+                        <a href="#">
+                            <span>HOME</span> </a>
+                        </li> 
+                        <li>
+                            <a href="#">
+                            <span>STORY</span></a>
+                            </li>
+                            <li>
+                        <a href="#" class="current">
+                            <span>CONTACT</span></a>
+                            </li>
+ 
+                </ul>
+            </nav>
+
+        </header>
+
+            <section>
+                <article>
+                 <!-- I used h1 for main heading and h2 for smaller heading-->
+
+                <h2>Life of a Starfish</h2>
+                  <!-- give a class attribute with a meaningful value to the image for designing it in CSS-->
+                   <!-- src attribute specifies a path and alt attribute is an alternate text for image if image cannot be displayed-->
+        <p><img  class="text-image" src="images/lone-starfish.jpg" alt="image of starfish">
+            Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; 
+            slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye,
+             "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." 
+             Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach
+              beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. 
+              Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch 
+              snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican 
+              golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin 
+              smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker 
+              northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish 
+              cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi 
+              yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard 
+              danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, 
+              halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish 
+              Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. 
+              Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio 
+              cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. 
+              Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, 
+              dottyback.
+
+        </p> 
+    </article>
+    </section> 
+        
+             
+        <section>
+            <h3> Facts About Starfish</h3>
+             <!-- ul tag for unordered lists-->
+        <ul>
+            <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li> 
+            <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+            <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+        </ul>
+        </section>
+
+        <section>
+     <h3> Contact to learn more</h3>
+
+      <!-- text type form-->
+
+
+    <form action="index.html" method="post">
+
+        <label for="fullname">Your Name</label>
+        <input id="fullname" type="text" name="fullname">
+
+        <label for="email">Your Email</label>
+        <input id="email" type="text" name="email">
+
+        <label for="message">Your Message</label>
+        <input id="message" type="text" name="message">
+
+        <h4>Would you like to visit the starfish?</h4>
+
+         <!-- radio button type form -->
+
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="starfish">
+        <label for="no">No</label>
+        <input type="radio" id="no" name="starfish">
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="maybe" name="starfish">
+         
+        <button type="submit">Send</button>
+
+
+       </form> 
+    </section>
+
+<footer>
+     <!-- copyright information-->
+   <p> &copy; Lone Starfish</p>
+</footer>
+</div>
+</body>
+</html>
