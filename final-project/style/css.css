@@ -1,4 +1,4 @@
-* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -49,3 +49,263 @@ table {
 /*****************************************
 DEFAULTS
 *****************************************/
+
+
+
+/*****************************************
+Mobile styling
+*****************************************/
+.container{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+}
+
+header{
+	background-color:#222;	
+}
+
+nav{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+nav a{
+	color: #c78c06;
+	text-decoration: none;
+}
+nav li{
+	text-align: center;
+	margin: 25px;	
+}
+#logo{
+	width:20%
+}
+
+.icon-zoom{
+	color: #c78c06;
+	border-color: #c78c06;
+	border-style: solid;
+	border-width: 1px;
+}
+button:hover, i:hover, a:hover{
+	background-color: #c78c06;
+	color:#222;
+}
+
+h1 {
+	position: relative;
+	color: white;
+	margin: 50px 0 0 0;
+	width: 80%;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 3rem;
+	margin-bottom: 5rem;
+	line-height: 5rem;
+	font-weight: bold;
+}
+.centered{
+		position: absolute;
+		top: 20%;
+		color: white;
+		background-color: #222;
+		opacity: 0.8;
+		line-height: 1rem;
+		margin: 60% 0 0 0;
+		text-align:left;
+		width: 90%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	  }
+
+ .about, .grid-container, .field-1{
+	background-color:#ffe6ac ;
+}
+.item1{
+	background-color: white;
+}
+section{
+	display:block;
+}
+section div{
+	border: solid white 5px;
+}
+button{
+	background-color: #222;
+	color: white;
+	padding: 20px 20px;
+	margin: 10px;
+}
+h1, h2, h3,h5, p,form ,footer, table, .location{
+	margin:10px;
+}
+img{
+	width: 100%;
+}
+.icon-right{
+	color: white;
+}
+h5{
+	border-bottom:solid 2px #c78c06;
+
+}
+/*****************************************
+use flex property to make columns and rows
+*****************************************/
+.form{
+	display: flex;
+	flex-direction: column;
+	
+}
+form input{
+	width: 90%;
+	margin:5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+ /*****************************************
+give padding value to increase the box size
+*****************************************/
+#message{
+	padding: 20px;
+}
+/*****************************************
+use 3 values for border
+*****************************************/
+table, th, td {
+	border: 1px solid black;
+  }
+  th, td {
+	 padding: 20px;
+	 width: 25%;
+  }
+th{
+	background-color:#ffe6ac ;
+}
+footer{
+	background-color:#222 ;
+	color:#c78c06;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+/*****************************************
+Desktop styling
+*****************************************/
+@media screen and (min-width: 760px)  {
+	
+	/*****************************************
+max content-1200px
+*****************************************/
+	  
+	  .container {
+		font-family: "Open Sans", sans-serif;
+		font-weight: bold;
+		max-width: 1200px;
+	  }
+	
+	  header {
+		background-color: #222;
+		height: 100px;
+		width: 100%;
+	  }
+
+	nav{
+		margin-top: -50px;
+	}
+	/*****************************************
+to center the items horizantally and vertically align-tems and justify-content
+*****************************************/
+	nav ul{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-bottom: 70%;
+	}
+    
+	#logo{
+		width:50px;
+		display: block;
+	}
+/*****************************************
+add the image in html and use position property to overlay
+*****************************************/
+.centered {
+    opacity: 0.8;
+    text-align: left;
+    width: 85%;
+    margin-top: 20%;
+    left: 50%;
+    padding-bottom: 2rem;
+    transform: translate(-50%, -50%);
+  }
+h1 {
+	position: relative;
+	color: white;
+	margin:20px 0 0 0;
+	width: 85%;
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 4.5rem;
+	margin-bottom: 5rem;
+	line-height: 5rem;
+	font-weight: bold;
+  }
+/*****************************************
+use grid area to make columns and rows
+*****************************************/
+.item1 { grid-area: services; }
+.item2 { grid-area: digital; }
+.item3 { grid-area: marketing;}
+.item4 { grid-area: video;}
+.item5 { grid-area: web;} 
+.item6 { grid-area: print;} 
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'services services services services services services'
+	'digital digital digital  marketing marketing marketing'
+	'video video web web print print';
+	 background-color: #ffe6ac;
+	 grid-template-columns: 40px;
+}
+.grid-container > div {
+	gap: 10px;
+	justify-content: center;
+	border: 5px solid white;
+}
+.item1{
+	background-color: white;
+}
+div.about {
+    float: right;
+    width: 100%;
+}
+ 
+.vision image{
+	width:100%;
+}
+/*****************************************
+grid
+*****************************************/
+.field-1{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows:  50% 50%;
+}
+.field-1 :nth-child(3){
+	grid-column:2;
+	grid-row: 2;
+}
+section article{
+	background-color:#ffe6ac;
+}
+ 
+}
+
