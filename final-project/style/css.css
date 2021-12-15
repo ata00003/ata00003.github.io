@@ -57,18 +57,18 @@ Mobile styling
 *****************************************/
 .container{
 	font-family: 'Open Sans', sans-serif;
-	font-weight:bold;
 }
-
 header{
 	background-color:#222;	
 }
-
 nav{
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
+/*****************************************
+text-decoration to omit the lines
+*****************************************/
 nav a{
 	color: #c78c06;
 	text-decoration: none;
@@ -80,7 +80,9 @@ nav li{
 #logo{
 	width:20%
 }
-
+/*****************************************
+icon-zoom next to search area
+*****************************************/
 .icon-zoom{
 	color: #c78c06;
 	border-color: #c78c06;
@@ -99,14 +101,14 @@ h1 {
 	width: 80%;
 	margin-left: 15px;
 	margin-right: 15px;
-	font-size: 3rem;
-	margin-bottom: 5rem;
-	line-height: 5rem;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+	line-height: 4rem;
 	font-weight: bold;
 }
 .centered{
 		position: absolute;
-		top: 20%;
+		top: 30%;
 		color: white;
 		background-color: #222;
 		opacity: 0.8;
@@ -114,11 +116,26 @@ h1 {
 		margin: 60% 0 0 0;
 		text-align:left;
 		width: 90%;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		left: 15%;
+		transform: translate(-10%, -30%);
 	  }
-
+.vision img{
+		width:95%;
+		height:250px;
+		margin:5px;
+	}
+.center{
+		position: absolute;
+		width: 85%;
+		transform: translate( 10%, -60%);
+		margin-top: -20%;
+}
+.center h2, .center p, .center button{
+	position: relative;
+	color: white;
+	margin:10px;
+}
+	
  .about, .grid-container, .field-1{
 	background-color:#ffe6ac ;
 }
@@ -148,6 +165,24 @@ img{
 }
 h5{
 	border-bottom:solid 2px #c78c06;
+
+}
+.grid-container button{
+	width: 95%;
+	font-size: 20px;
+}
+.icon-right{
+	margin-left: 10px;
+}
+li input{
+	padding-left: 150px;
+	padding-right: 120px;
+}
+h2,h3,h4,h5{
+	font-weight: bold;
+}
+h2{
+	font-size:2rem;
 
 }
 /*****************************************
@@ -202,11 +237,20 @@ max content-1200px
 *****************************************/
 	  
 	  .container {
-		font-family: "Open Sans", sans-serif;
-		font-weight: bold;
+		font-family:'Open Sans', sans-serif;
 		max-width: 1200px;
+		margin:20px;
+		line-height: 25px;
+
 	  }
-	
+	li input{
+		padding:10px 40px 10px 10px;
+	}
+	.icon-zoom{
+		padding:5px 10px;
+		margin-left: -5px;
+	}
+
 	  header {
 		background-color: #222;
 		height: 100px;
@@ -214,8 +258,9 @@ max content-1200px
 	  }
 
 	nav{
-		margin-top: -50px;
+		margin-top: -100px;
 	}
+
 	/*****************************************
 to center the items horizantally and vertically align-tems and justify-content
 *****************************************/
@@ -223,23 +268,29 @@ to center the items horizantally and vertically align-tems and justify-content
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-		margin-bottom: 70%;
+
 	}
     
 	#logo{
 		width:50px;
-		display: block;
+		margin-left: 100px;
+		padding:30px;
+	}
+	#home{
+	height:40rem;
 	}
 /*****************************************
 add the image in html and use position property to overlay
 *****************************************/
 .centered {
+	position: absolute;
     opacity: 0.8;
     text-align: left;
-    width: 85%;
-    margin-top: 20%;
+    width: 80%;
+    margin-top: 15%;
     left: 50%;
     padding-bottom: 2rem;
+	padding-top: 2rem;
     transform: translate(-50%, -50%);
   }
 h1 {
@@ -267,6 +318,7 @@ use grid area to make columns and rows
 
 
 .grid-container {
+  margin:30px;
   display: grid;
   grid-template-areas:
     'services services services services services services'
@@ -283,14 +335,97 @@ use grid area to make columns and rows
 .item1{
 	background-color: white;
 }
+.item2{
+	width: 100%;
+}
+.item2 img{
+	height:60%;
+}
+.item3{
+	width: 100%;	
+}
+.item3 > button{
+	margin-top: 35px;
+	margin-bottom: 20px;
+}
+.item3 img{
+	height:60%;
+}
+.item4 > button{
+	margin-top: 0;
+	margin-bottom: 20px;
+	margin-left: 5px;
+
+}
+.item5 > button{
+	margin-top: 25px;
+	margin-bottom: 20px;
+
+}
+.item6 > button{
+	margin-top:0;
+	margin-bottom: 20px;
+
+}
+
+.item4, .item5, .item6{
+	width:100%;
+
+}
+.item4 img, .item5 img, .item6 img{
+	width:100%;
+	height: 50%;
+
+}
+.grid-container button{
+	width: 95%;
+	font-size: 20px;
+}
+.grid-container h3{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
 div.about {
-    float: right;
     width: 100%;
 }
  
-.vision image{
-	width:100%;
+.about{
+	display: block;
+	margin-top: -15px;
+
 }
+.about img{
+	float: left;
+	width: 30%;
+	margin: 2% 2% 2% 10%;
+
+}
+
+h2{
+	font-size: 2rem;
+	font-weight: bold;
+}
+h3,h4{
+	font-size: 1.5rem;
+}
+.vision img{
+	width:100%;
+	height:250px;
+	margin:10px;
+}
+.center{
+	position: absolute;
+    width: 85%;
+    transform: translate( 10%, -60%);
+	margin-top: -10%;
+}
+.center h2, .center p, .center button{
+	position: relative;
+	color: white;
+	font-weight: bold;
+	margin:10px;
+}
+	
 /*****************************************
 grid
 *****************************************/
@@ -306,6 +441,67 @@ grid
 section article{
 	background-color:#ffe6ac;
 }
- 
+ /*****************************************
+flex property to stack them and flex-grow to increase the size
+*****************************************/
+.flex >div {
+	display: flex;
+	flex-wrap: wrap;
 }
+.flex .form{
+	order:-1;
+	margin-top: 50px;
+}
+.flex .hours{
+	order:3;
+	flex-grow: 3;
+}
+.location h2{
+	order: 2;
+	margin-top: 60px;
+}
+.flex .location{
+	padding-left: 20px;
+    margin-right: 35px;
+	margin-top: -20px;
+}
+table{
+	width: 95%;
+	margin-left: 40px;
+	
+}
+form {
+	margin-top: -20px;
+	margin-left: 35px;
+}
+form label{
+	margin-left: 10px;
 
+}
+.field-1{
+margin-left: 35px;
+margin-right: 35px;
+}
+#contact{
+	margin: 60px;
+}
+.flex>div{
+	justify-content: center;
+}
+form input[type=text]{
+  padding: 10px 150px;
+  margin: 8px 10px;
+  display: block;
+  border: 1px solid #222;
+  box-sizing: border-box;
+}
+/*****************************************
+use id selector to style message box
+*****************************************/
+#message{
+	padding: 30px 150px;
+}
+footer{
+	width: 100%;
+}
+}
